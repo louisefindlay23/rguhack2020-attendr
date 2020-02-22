@@ -48,7 +48,7 @@ button {
 h1 {
     color: var(--white);
     font-size: 3em;
-    margin: 1.5em 0 .5em;
+    padding-bottom: 3%;
 }
 
 
@@ -184,26 +184,27 @@ button {
 }
 
 .card {
-  width: auto;
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(102,40,115,0.86);
-  box-shadow: 0px 0px 6px 3px rgba(102,40,115,0.86);
+    width: auto;
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(102, 40, 115, 0.86);
+    box-shadow: 0px 0px 6px 3px rgba(102, 40, 115, 0.86);
 }
+
 body#tinymce {
-background: #FFFFFF
+    background: #FFFFFF
 }
 
 .inner-card {
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
 }
 
 .card-text {
-  text-align: center;
+    text-align: center;
 }
 
 .fa-check-circle {
-  font-size: 4em;
-  color: #84b357;
-  padding-left: 46%;
+    font-size: 4em;
+    color: #84b357;
+    padding-left: 46%;
 }
