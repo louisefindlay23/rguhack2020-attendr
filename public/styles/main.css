@@ -4,7 +4,8 @@
     --white: #ffffff;
     --purple: #662873;
     --green: #84BEA7;
-    --grey: #ccc;
+    --light-grey: #e8e8e8;
+    --dark-grey: #bbb;
     --blue: #469ee8;
     --pink: #d17b98;
 }
@@ -20,6 +21,8 @@ html {
 
 header {
     background: var(--purple);
+    padding: 2% 0;
+    margin-bottom: 7.5%;
 }
 
 body {
@@ -58,7 +61,7 @@ header h1 {
 
 h2 {
     font-size: 1.5em;
-    margin: 1em 0 .5em;
+    margin: 0.5em 0 .5em;
 }
 
 p {
@@ -91,6 +94,14 @@ button {
 
 .flex {
     display: flex;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .flex-column {
@@ -126,7 +137,7 @@ button {
 
 .card {
     border: 1px solid var(--purple);
-    margin: 5% 0;
+    margin: 10% 0;
 }
 
 .lecture {
@@ -147,7 +158,7 @@ button {
 }
 
 .card-bottom {
-    background: var(--grey);
+    background: var(--light-grey);
     clear: both;
     align-items: center;
 }
@@ -162,21 +173,42 @@ button {
 }
 
 .course {
-    color: var(--grey);
+    color: var(--dark-grey);
 }
 
 .fa-check-double {
     color: var(--blue);
     font-size: 4em;
     position: absolute;
-    top: 35%;
+    top: 32.5%;
     left: 65%
 }
 
 .fa-map-marker,
-.fa-clock {
+.fa-clock,
+.fa-sign-out-alt,
+.fa-question {
     color: var(--purple);
     font-size: 2em;
+}
+
+
+.fa-sign-out-alt.place-img {
+    position: absolute;
+    font-size: 4em;
+    color: var(--purple);
+    top: 66%;
+    left: 65%;
+}
+
+.fa-question,
+.white {
+    color: var(--white);
+}
+
+.fa-question,
+.fa-sign-out-alt.white {
+    font-size: 1.25em;
 }
 
 .card-bottom i {
