@@ -34,6 +34,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1,
@@ -190,7 +191,8 @@ button {
 .fa-map-marker,
 .fa-clock,
 .fa-sign-out-alt,
-.fa-question {
+.fa-question,
+.fa-times {
     color: var(--purple);
     font-size: 2em;
 }
@@ -251,4 +253,8 @@ body#tinymce {
 input[type=submit] {
     background: var(--purple);
     color: var(--white);
+}
+
+.content {
+    margin-top: 5%;
 }
