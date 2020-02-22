@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript timer</title>
+    <link rel="stylesheet" href="./public/styles/timer-style.css">
+</head>
+<body>
+    <div id="timer-container">
+        <p id="hours" class="timer-card">00</p>
+        <p id="minutes" class="timer-card">00</p>
+        <p id="seconds" class="timer-card">00</p>
+    </div>
+
+    <script>
+      function startTimer(duration, h, m, s) {
+      var start = Date.now(),
+          diff,
+          hours,
+          minutes,
+          seconds;
+
+      function timer() {
+          // get seconds that elapsed since startTimer() was called
+          diff = duration - (((Date.now() - start) / 1000) | 0);
+
+          // Setting and displaying hours, minutes, seconds
+          hours = (diff / 3600) | 0;
+          minutes = ((diff % 3600) / 60)| 0;
+          seconds = (diff % 60) | 0;
+
+          hours = hours < 10 ? "0" + hours : hours;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          h.textContent = hours;
+          m.textContent = minutes;
+          s.textContent = seconds;
+
+          if (diff <= 0) {
+              // add one second so that the count down starts at the full duration
+              start = Date.now() + 1000;
+          }
+      };
+      // don't want to wait a full second before the timer starts
+      timer();
+      setInterval(timer, 1000);
+    }
+    window.onload = function () {
+        var timeLeft = 3600 * 3,
+            h = document.querySelector('#hours');
+            m = document.querySelector('#minutes');
+            s = document.querySelector('#seconds');
+        startTimer(timeLeft, h, m, s);
+    };
+
+  </script>
+
+</body>
+</html>
