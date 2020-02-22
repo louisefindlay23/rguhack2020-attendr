@@ -285,6 +285,10 @@ footer {
     margin-bottom: 0;
 }
 
+.fixed {
+    position: fixed;
+}
+
 footer .flex-container {
     justify-content: center;
     margin: 2% 0;
