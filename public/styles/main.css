@@ -168,6 +168,7 @@ button {
     background: var(--purple);
     clear: both;
     align-items: center;
+    padding: 5% auto;
 }
 
 .card-bottom i {
@@ -187,7 +188,7 @@ button {
     color: var(--purple);
     font-size: 4em;
     position: absolute;
-    top: 37.5%;
+    top: 45%;
     left: 65%
 }
 
@@ -210,7 +211,7 @@ button {
     position: absolute;
     font-size: 4em;
     color: var(--purple);
-    top: 80%;
+    top: 100%;
     left: 65%;
 }
 
@@ -232,6 +233,13 @@ button {
     width: auto;
     -webkit-box-shadow: 0px 0px 6px 3px rgba(102, 40, 115, 0.86);
     box-shadow: 0px 0px 6px 3px rgba(102, 40, 115, 0.86);
+}
+
+.card h4,
+.card button,
+p.course,
+p.student {
+    margin: 10%;
 }
 
 body#tinymce {
