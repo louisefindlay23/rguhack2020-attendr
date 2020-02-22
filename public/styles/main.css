@@ -174,9 +174,18 @@ button {
 }
 
 .fa-map-marker,
-.fa-clock {
+.fa-clock,
+.fa-sign-out-alt {
     color: var(--purple);
     font-size: 2em;
+}
+
+.fa-sign-out-alt {
+    position: absolute;
+    font-size: 4em;
+    color: var(--purple);
+    top: 62.5%;
+    left: 65%;
 }
 
 .card-bottom i {
