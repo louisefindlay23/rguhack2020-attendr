@@ -1,1 +1,2 @@
-# hackathon-2020-attendr
+# Attendr App
+A new and improved Attendr app. Produced as part of the RGU Hackathon 2020.
