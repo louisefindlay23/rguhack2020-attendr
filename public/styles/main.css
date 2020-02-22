@@ -4,7 +4,8 @@
     --white: #ffffff;
     --purple: #662873;
     --green: #84BEA7;
-    --grey: #ccc;
+    --light-grey: #e8e8e8;
+    --dark-grey: #bbb;
     --blue: #469ee8;
     --pink: #d17b98;
 }
@@ -147,7 +148,7 @@ button {
 }
 
 .card-bottom {
-    background: var(--grey);
+    background: var(--light-grey);
     clear: both;
     align-items: center;
 }
@@ -162,7 +163,7 @@ button {
 }
 
 .course {
-    color: var(--grey);
+    color: var(--dark-grey);
 }
 
 .fa-check-double {
