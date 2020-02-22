@@ -6,7 +6,6 @@
     --green: #84BEA7;
     --light-grey: #e8e8e8;
     --dark-grey: #bbb;
-    --blue: #469ee8;
     --pink: #d17b98;
 }
 
@@ -19,7 +18,8 @@ html {
     height: 100%;
 }
 
-header {
+header,
+footer {
     background: var(--purple);
     padding: 2% 0;
     margin-bottom: 7.5%;
@@ -32,7 +32,8 @@ body {
     margin: 0 auto;
 }
 
-a {
+a,
+.fa-arrow-circle-left {
     text-decoration: none;
     cursor: pointer;
 }
@@ -81,6 +82,8 @@ section {
 
 input,
 button {
+    background: var(--purple);
+    color: var(--white);
     width: 100%;
     margin: 5%;
     padding: 5%;
@@ -162,9 +165,10 @@ button {
 }
 
 .card-bottom {
-    background: var(--light-grey);
+    background: var(--purple);
     clear: both;
     align-items: center;
+    padding: 5% auto;
 }
 
 .card-bottom i {
@@ -177,14 +181,14 @@ button {
 }
 
 .course {
-    color: var(--dark-grey);
+    font-style: italic;
 }
 
 .fa-check-double {
-    color: var(--blue);
+    color: var(--purple);
     font-size: 4em;
     position: absolute;
-    top: 32.5%;
+    top: 45%;
     left: 65%
 }
 
@@ -192,9 +196,14 @@ button {
 .fa-clock,
 .fa-sign-out-alt,
 .fa-question,
-.fa-times {
+.fa-times,
+.fa-arrow-circle-left {
     color: var(--purple);
     font-size: 2em;
+}
+
+::placeholder {
+    color: var(--white);
 }
 
 
@@ -202,7 +211,7 @@ button {
     position: absolute;
     font-size: 4em;
     color: var(--purple);
-    top: 66%;
+    top: 100%;
     left: 65%;
 }
 
@@ -224,6 +233,13 @@ button {
     width: auto;
     -webkit-box-shadow: 0px 0px 6px 3px rgba(102, 40, 115, 0.86);
     box-shadow: 0px 0px 6px 3px rgba(102, 40, 115, 0.86);
+}
+
+.card h4,
+.card button,
+p.course,
+p.student {
+    margin: 10%;
 }
 
 body#tinymce {
@@ -253,8 +269,44 @@ body#tinymce {
 input[type=submit] {
     background: var(--purple);
     color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10%;
 }
 
 .content {
     margin-top: 5%;
+}
+
+.purple {
+    color: var(--purple);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.fixed {
+    position: fixed;
+}
+
+footer .flex-container {
+    justify-content: center;
+    margin: 2% 0;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.card-bottom p {
+    color: var(--white);
 }
