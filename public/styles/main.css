@@ -81,7 +81,10 @@ section {
 input,
 button {
     width: 100%;
-    margin: 0 5%;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 50px;
+    border: 1px solid var(--light-grey);
 }
 
 /* Structural */
@@ -239,4 +242,13 @@ body#tinymce {
     font-size: 4em;
     color: #84b357;
     padding-left: 46%;
+}
+
+#logo-padding {
+    margin-bottom: 10%;
+}
+
+button {
+    background: var(--purple);
+    color: var(--white);
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,17 +11,25 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <script src="https://kit.fontawesome.com/59dd3e37d5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body dir="ltr">
+</head>
+
+<body dir="ltr">
     <header>
-        <h1>RGU Attend</h1>
+        <div class="flex-container">
+            <h2 class="white">RGU Attend</h2>
+        </div>
     </header>
     <main class="wrap">
-        <img src="img/rgu-logo.png" alt="RGU Logo">
-        <input type="name" name="name" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
-        <button value="Login"></button>
+        <div class="flex-container">
+            <img id="logo-padding" src="img/rgu-logo.png" alt="RGU Logo">
+        </div>
+        <div class="flex-container">
+            <input type="name" name="name" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button onclick="window.location.href='/profile.html'" value="Login">Login</button>
+        </div>
     </main>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
