@@ -6,7 +6,6 @@
     --green: #84BEA7;
     --light-grey: #e8e8e8;
     --dark-grey: #bbb;
-    --blue: #469ee8;
     --pink: #d17b98;
 }
 
@@ -166,7 +165,7 @@ button {
 }
 
 .card-bottom {
-    background: var(--light-grey);
+    background: var(--purple);
     clear: both;
     align-items: center;
 }
@@ -181,11 +180,11 @@ button {
 }
 
 .course {
-    color: var(--dark-grey);
+    font-style: italic;
 }
 
 .fa-check-double {
-    color: var(--blue);
+    color: var(--purple);
     font-size: 4em;
     position: absolute;
     top: 37.5%;
@@ -298,4 +297,8 @@ main {
     width: 100%;
     height: auto;
     overflow: auto;
+}
+
+.card-bottom p {
+    color: var(--white);
 }
