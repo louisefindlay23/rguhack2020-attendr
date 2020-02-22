@@ -21,6 +21,7 @@ html {
 
 header {
     background: var(--purple);
+    padding: 2% 0;
 }
 
 body {
@@ -59,7 +60,7 @@ header h1 {
 
 h2 {
     font-size: 1.5em;
-    margin: 1em 0 .5em;
+    margin: 0.5em 0 .5em;
 }
 
 p {
@@ -92,6 +93,14 @@ button {
 
 .flex {
     display: flex;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .flex-column {
@@ -176,17 +185,29 @@ button {
 
 .fa-map-marker,
 .fa-clock,
-.fa-sign-out-alt {
+.fa-sign-out-alt,
+.fa-question {
     color: var(--purple);
     font-size: 2em;
 }
 
-.fa-sign-out-alt {
+
+.fa-sign-out-alt place-img {
     position: absolute;
     font-size: 4em;
     color: var(--purple);
     top: 62.5%;
     left: 65%;
+}
+
+.fa-question,
+.white {
+    color: var(--white);
+}
+
+.fa-question,
+.fa-sign-out-alt.white {
+    font-size: 1.25em;
 }
 
 .card-bottom i {
