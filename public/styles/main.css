@@ -248,7 +248,7 @@ body#tinymce {
     margin-bottom: 10%;
 }
 
-button {
+input[type=submit] {
     background: var(--purple);
     color: var(--white);
 }

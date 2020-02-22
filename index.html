@@ -23,11 +23,13 @@
         <div class="flex-container">
             <img id="logo-padding" src="img/rgu-logo.png" alt="RGU Logo">
         </div>
-        <div class="flex-container">
-            <input type="name" name="name" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button onclick="window.location.href='/profile.html'" value="Login">Login</button>
-        </div>
+        <form action="/profile.html">
+            <div class="flex-container">
+                <input type="name" name="name" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </main>
     <script src="js/script.js"></script>
 </body>
