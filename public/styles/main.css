@@ -22,6 +22,7 @@ html {
 header {
     background: var(--purple);
     padding: 2% 0;
+    margin-bottom: 7.5%;
 }
 
 body {
@@ -136,7 +137,7 @@ button {
 
 .card {
     border: 1px solid var(--purple);
-    margin: 5% 0;
+    margin: 10% 0;
 }
 
 .lecture {
@@ -179,7 +180,7 @@ button {
     color: var(--blue);
     font-size: 4em;
     position: absolute;
-    top: 30%;
+    top: 32.5%;
     left: 65%
 }
 
@@ -192,11 +193,11 @@ button {
 }
 
 
-.fa-sign-out-alt place-img {
+.fa-sign-out-alt.place-img {
     position: absolute;
     font-size: 4em;
     color: var(--purple);
-    top: 62.5%;
+    top: 66%;
     left: 65%;
 }
 
