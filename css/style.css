@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --purple: #662873;
+}
+
+html body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: var(--purple);
+}
+
+h1 {
+    font-family: 'Roboto';
+}
+
+h1 {
+    color: var(--white);
+}
+
+header h1 {
+    text-align: center;
+}
