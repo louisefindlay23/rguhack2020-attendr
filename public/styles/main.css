@@ -6,6 +6,7 @@
     --green: #84BEA7;
     --grey: #ccc;
     --blue: #469ee8;
+    --pink: #d17b98;
 }
 
 /* Generic */
@@ -125,10 +126,15 @@ button {
 
 .card {
     border: 1px solid var(--purple);
+    margin: 5% 0;
 }
 
 .lecture {
     background: var(--green);
+}
+
+.lab {
+    background: var(--pink);
 }
 
 .card button {
@@ -169,6 +175,7 @@ button {
 
 .fa-map-marker,
 .fa-clock {
+    color: var(--purple);
     font-size: 2em;
 }
 
