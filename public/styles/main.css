@@ -3,72 +3,127 @@
 :root {
     --white: #ffffff;
     --purple: #662873;
+    --green: #84BEA7;
 }
 
 /* Generic */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html { height: 100%; }
+html {
+    height: 100%;
+}
+
+header {
+    background: var(--purple);
+}
 
 body {
-  color: #333;
-  font: 16px/1 "Roboto", sans-serif;
-  min-height: 100%;
-  margin: 0 auto;
+    color: #333;
+    font: 16px/1 "Roboto", sans-serif;
+    min-height: 100%;
+    margin: 0 auto;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-h1, h2, h3 {
-  color: #000;
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+p,
+input,
+button {
+    font-family: 'Roboto';
+    color: #000;
+    margin: 0;
 }
 
 h1 {
-  font-size: 3em;
-  margin: 1.5em 0 .5em;
+    color: var(--white);
+    font-size: 3em;
+    margin: 1.5em 0 .5em;
+}
+
+
+header h1 {
+    text-align: center;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin: 1em 0 .5em;
+    font-size: 1.5em;
+    margin: 1em 0 .5em;
 }
 
 p {
-  line-height: 1.24;
-  margin: .7em 0 .6em;
+    line-height: 1.24;
+    margin: .7em 0 .6em;
 }
 
 img {
-  display: block;
+    display: block;
 }
 
 section {
-  padding: 8em 0;
+    padding: 8em 0;
+}
+
+
+input,
+button {
+    width: 100%;
+    margin: 0 5%;
 }
 
 /* Structural */
 .wrap {
-  margin: 0 auto;
-  max-width: 1072px;
-  padding: 0 24px;
-  width: 100%;
+    margin: 0 auto;
+    max-width: 1072px;
+    padding: 0 24px;
+    width: 100%;
 }
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .split {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .flex .item {
-  display: flex;
-  flex-basis: 50%;
-  justify-content: center;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+/* Other Classes */
+
+#intro {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid var(--purple);
+}
+
+.lecture {
+    background: var(--green);
+}
+
+.card button {
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 2.5%;
+    margin: 2.5%;
+    color: var(--white);
+}
+
+.card h4,
+.card p {
+    margin: 2.5%;
 }
