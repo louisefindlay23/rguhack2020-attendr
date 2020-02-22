@@ -4,6 +4,8 @@
     --white: #ffffff;
     --purple: #662873;
     --green: #84BEA7;
+    --grey: #ccc;
+    --blue: #469ee8;
 }
 
 /* Generic */
@@ -90,6 +92,11 @@ button {
     display: flex;
 }
 
+.flex-column {
+    flex-flow: column;
+}
+
+
 .split {
     justify-content: space-between;
 }
@@ -98,6 +105,16 @@ button {
     display: flex;
     flex-basis: 50%;
     justify-content: center;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
 }
 
 /* Other Classes */
@@ -123,7 +140,38 @@ button {
     color: var(--white);
 }
 
+.card-bottom {
+    background: var(--grey);
+    clear: both;
+    align-items: center;
+}
+
+.card-bottom i {
+    align-self: center;
+}
+
 .card h4,
 .card p {
     margin: 2.5%;
+}
+
+.course {
+    color: var(--grey);
+}
+
+.fa-check-double {
+    color: var(--blue);
+    font-size: 4em;
+    position: absolute;
+    top: 35%;
+    left: 65%
+}
+
+.fa-map-marker,
+.fa-clock {
+    font-size: 2em;
+}
+
+.card-bottom i {
+    margin-right: 10%;
 }
