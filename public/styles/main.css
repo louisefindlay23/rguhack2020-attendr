@@ -134,6 +134,17 @@ section {
     transition: .15s ease-in-out;
 }
 
+#warning-message {
+    background-color: rgba(255,25,25,0.6);
+    box-sizing: border-box;
+    color: white;
+    border-radius: 10px;
+}
+
+#warning-message.padded {
+    padding: 10px 10px;
+}
+
 .button:hover {
     box-shadow: 0 3px 12px -1px rgba(0, 0, 0, .1);
 }
@@ -185,6 +196,24 @@ section {
     color: #fff;
 }
 
+.button.icon.google {
+  color: #689f38;
+}
+
+.button.icon.google:hover {
+  background-color: #689f38;
+  color: #fff;
+}
+
+.button.icon.apple {
+  color: #000;
+}
+
+.button.icon.apple:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .bubble {
     border-radius: 10px;
     color: #fff;
@@ -210,6 +239,19 @@ section {
 
 .bubble.blue {
     background-color: blue;
+  background-color: #8bc34a;
+}
+
+.bubble.grey {
+  background-color: #607D8B;
+}
+
+.bubble.purple {
+  background-image: linear-gradient(to right top, #965bf1 0%, #766cf4 100%);
+}
+
+.bubble.blue {
+  background-image: linear-gradient(to right, #009688 0%, #3F51B5 100%);
 }
 
 /* Blocks */
@@ -308,6 +350,11 @@ nav .links a.active:after {
 }
 
 /* Demo */
+.demo .bubble {
+  font-size: 14px;
+  color: #333;
+}
+
 .phone {
     background: url('../images/phone.png') no-repeat center / cover;
     height: 710px;
@@ -569,6 +616,39 @@ nav .links a.active:after {
 
 footer {
     background-color: #f1f1f1;
+}
+
+#user-reviews {
+  background-image: linear-gradient(0deg, #f4fbfc 0%, #ffffff 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+#user-reviews:before {
+  background: url('../images/bg-pattern.png') no-repeat center bottom / cover;
+  bottom: -24px;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+#user-reviews > div {
+  position: relative;
+  z-index: 99;
+}
+
+/* Contact Us */
+#contact {
+  background-color: #f1f1f1;
+}
+
+footer {
+  background-color: #242424;
+  color: #fff;
 }
 
 /* Other Components */

@@ -94,3 +94,15 @@ window.addEventListener('DOMContentLoaded', function () {
 function goBack() {
     screen('attendance');
 }
+
+function validateLogin() {
+    var warning_message = document.getElementById("warning-message");
+    if (document.getElementById("password").value.length >= 5 && document.getElementById("username").value.length >= 1) {
+        warning_message.innerHTML = "";
+        screen('attendance');
+        warning_message.classList.remove("padded");
+    } else {
+        warning_message.innerHTML = "Sorry, your password must be more than 5 characters and your username can't be blank.";
+        warning_message.classList.add("padded");
+    }
+}
