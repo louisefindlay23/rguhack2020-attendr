@@ -132,6 +132,17 @@ section {
   transition: .15s ease-in-out;
 }
 
+#warning-message {
+    background-color: rgba(255,25,25,0.6);
+    box-sizing: border-box;
+    color: white;
+    border-radius: 10px;
+}
+
+#warning-message.padded {
+    padding: 10px 10px;
+}
+
 .button:hover {
   box-shadow: 0 3px 12px -1px rgba(0,0,0,.1);
 }

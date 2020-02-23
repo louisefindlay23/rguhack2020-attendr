@@ -96,9 +96,10 @@
                       <section>
                         <img src="./public/images/rgu.png">
                         <div class="form">
-                          <input type="text" placeholder="Username">
-                          <input type="password" placeholder="Password">
-                          <button class="button" onclick="screen('attendance');">Log In</button>
+                          <input id="username" type="text" placeholder="Username">
+                          <input id="password" type="password" placeholder="Password">
+                          <button class="button" onclick="validateLogin();">Log In</button>
+                            <p id="warning-message"></p>
                         </div>
                       </section>
                     </div>
