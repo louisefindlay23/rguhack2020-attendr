@@ -448,6 +448,18 @@ nav .links a.active:after {
     margin-right: 1em;
 }
 
+.purple {
+    color: #6f2377;
+}
+
+.content {
+    margin-top: 15%;
+}
+
+.attend {
+    margin-top: 12.5%;
+}
+
 #second-card {
     margin-top: 10%;
 }
@@ -458,6 +470,13 @@ nav .links a.active:after {
     flex-direction: row;
     margin-bottom: .5em;
     padding: .5em .75em;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .screen .cat.green {
@@ -471,6 +490,12 @@ nav .links a.active:after {
 .screen .cat.grey {
     background-color: #f1f1f1;
     color: #333;
+}
+
+.fa-arrow-circle-left {
+    margin-top: 15%;
+    font-size: 3em;
+    cursor: pointer;
 }
 
 .cat i {
@@ -544,25 +569,6 @@ nav .links a.active:after {
 
 footer {
     background-color: #f1f1f1;
-}
-
-.screen footer {
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 0;
-}
-
-.screen .fixed {
-    position: fixed;
-}
-
-.screen .footer .flex-container {
-    justify-content: center;
-    margin: 2% 0;
 }
 
 /* Other Components */

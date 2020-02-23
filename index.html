@@ -86,9 +86,9 @@
                                         </header>
                                         <section>
                                             <img src="./public/images/rgu.png">
-                                            <form class="form">
-                                                <input type="text" placeholder="Username" required>
-                                                <input type="password" placeholder="Password" required>
+                                            <form class="form" onsubmit="return false">
+                                                <input type="text" placeholder="Username">
+                                                <input type="password" placeholder="Password">
                                                 <button class="button" value="Log In" onclick="screen('attendance')">Log In</button>
                                             </form>
                                         </section>
@@ -97,9 +97,9 @@
                                         <header class="flex vAlign hAlign">
                                             <div class="options flex split">
                                                 <i onclick="screen('login')" class="fa fa-sign-out-alt"></i>
-                                                <i class="fa fa-question"></i>
+                                                <i onclick="screen('tips')" class="fa fa-question"></i>
                                             </div>
-                                            <h3>RGU Attend</h3>
+                                            <h3>Student Profile</h3>
                                         </header>
                                         <section>
                                             <h3 class="text-center name">Hello, Kyle</h3>
@@ -148,11 +148,24 @@
                                                 </div>
                                             </div>
                                         </section>
-                                        <footer>
+                                    </div>
+                                    <div class="screen" data-screen="tips">
+                                        <header>
+                                            <h3>About RGU Attend</h3>
+                                        </header>
+                                        <main class="wrap">
+                                            <p class="content">RGU Attend is a student attendence app from Attendr. Simplifying register taking across universities. </p>
+
+                                            <p>RGU Attend consists of two apps, one for students and one for lecturers.</p>
+
+                                            <p>Through Bluetooth Low Energy (BLE), the Student app connects to the Lecturer app to record your attendance in lectures and labs.</p>
+
+                                            <p>This makes signing into classes easier for students since they don't have to fumble around for a pen and saves time for lecturers who don't have spend time finding the sheet of paper.</p>
+
                                             <div class="flex-container">
-                                                <i onclick="goBack()" class="fas fa-arrow-circle-left white"></i>"
+                                                <i class="fas fa-arrow-circle-left purple" onclick="goBack()"></i>
                                             </div>
-                                        </footer>
+                                        </main>
                                     </div>
                                 </div>
                             </div>
