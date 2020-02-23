@@ -343,7 +343,14 @@ nav .links a.active:after {
     overflow: auto;
     position: relative;
     text-align: center;
+}
+
+.screen .home-header {
     margin-bottom: 15%;
+}
+
+.screen .name {
+    margin-bottom: 10%;
 }
 
 .screen header h3 {
@@ -406,6 +413,7 @@ nav .links a.active:after {
     cursor: pointer;
     padding: .75em;
     user-select: none;
+    margin-bottom: 5%;
 }
 
 .screen .bubble:active {
@@ -438,6 +446,10 @@ nav .links a.active:after {
 
 .cats .cat:not(:last-child) {
     margin-right: 1em;
+}
+
+#second-card {
+    margin-top: 10%;
 }
 
 .screen .cat {
@@ -532,6 +544,25 @@ nav .links a.active:after {
 
 footer {
     background-color: #f1f1f1;
+}
+
+.screen footer {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.screen .fixed {
+    position: fixed;
+}
+
+.screen .footer .flex-container {
+    justify-content: center;
+    margin: 2% 0;
 }
 
 /* Other Components */

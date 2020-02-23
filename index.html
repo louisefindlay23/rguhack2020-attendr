@@ -81,15 +81,15 @@
                             <div class="viewport">
                                 <div id="screens" class="screens">
                                     <div class="screen" data-screen="login">
-                                        <header>
+                                        <header class="home-header">
                                             <h3>RGU Attend</h3>
                                         </header>
                                         <section>
                                             <img src="./public/images/rgu.png">
-                                            <form class="form" action="screen('attendance');">
+                                            <form class="form">
                                                 <input type="text" placeholder="Username" required>
                                                 <input type="password" placeholder="Password" required>
-                                                <input type="submit" class="button" value="Log In">
+                                                <button class="button" value="Log In" onclick="screen('attendance')">Log In</button>
                                             </form>
                                         </section>
                                     </div>
@@ -102,8 +102,8 @@
                                             <h3>RGU Attend</h3>
                                         </header>
                                         <section>
-                                            <h3 class="text-center" style="margin: 0 0 1em;">Hello, Kyle</h3>
-                                            <div class="bubble flex col" onclick="mark(this);">
+                                            <h3 class="text-center name">Hello, Kyle</h3>
+                                            <div class=" bubble flex col" onclick="mark(this);">
                                                 <div class="cat green">Teaching - Lecture</div>
                                                 <h3>Physical Activity and Exercise Prescription</h3>
                                                 <div class="class-id cats flex split vAlign">
@@ -125,7 +125,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="bubble flex col" onclick="mark(this);">
+                                            <div id="second-card" class="bubble flex col" onclick="mark(this);">
                                                 <div class="cat pink">Teaching - Laboratory/Practical</div>
                                                 <h3>Physical Activity and Exercise Prescription</h3>
                                                 <div class="class-id cats flex split vAlign">
@@ -148,6 +148,11 @@
                                                 </div>
                                             </div>
                                         </section>
+                                        <footer>
+                                            <div class="flex-container">
+                                                <i onclick="goBack()" class="fas fa-arrow-circle-left white"></i>"
+                                            </div>
+                                        </footer>
                                     </div>
                                 </div>
                             </div>
