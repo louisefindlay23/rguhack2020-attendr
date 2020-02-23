@@ -183,6 +183,24 @@ section {
   color: #fff;
 }
 
+.button.icon.google {
+  color: #689f38;
+}
+
+.button.icon.google:hover {
+  background-color: #689f38;
+  color: #fff;
+}
+
+.button.icon.apple {
+  color: #000;
+}
+
+.button.icon.apple:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .bubble {
   border-radius: 10px;
   color: #fff;
@@ -194,10 +212,21 @@ section {
   margin-bottom: 1em;
 }
 
-.bubble.green { background-color: green; }
-.bubble.grey { background-color: grey; }
-.bubble.purple { background-color: purple; }
-.bubble.blue { background-color: blue; }
+.bubble.green {
+  background-color: #8bc34a;
+}
+
+.bubble.grey {
+  background-color: #607D8B;
+}
+
+.bubble.purple {
+  background-image: linear-gradient(to right top, #965bf1 0%, #766cf4 100%);
+}
+
+.bubble.blue {
+  background-image: linear-gradient(to right, #009688 0%, #3F51B5 100%);
+}
 
 /* Blocks */
 nav {
@@ -295,6 +324,11 @@ nav .links a.active:after {
 }
 
 /* Demo */
+.demo .bubble {
+  font-size: 14px;
+  color: #333;
+}
+
 .phone {
   background: url('../images/phone.png') no-repeat center / cover;
   height: 710px;
@@ -510,12 +544,37 @@ nav .links a.active:after {
 }
 
 /* User Reviews */
-.bubble {
-  border-radius: 10px;
+#user-reviews {
+  background-image: linear-gradient(0deg, #f4fbfc 0%, #ffffff 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+#user-reviews:before {
+  background: url('../images/bg-pattern.png') no-repeat center bottom / cover;
+  bottom: -24px;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+#user-reviews > div {
+  position: relative;
+  z-index: 99;
+}
+
+/* Contact Us */
+#contact {
+  background-color: #f1f1f1;
 }
 
 footer {
-  background-color: #f1f1f1;
+  background-color: #242424;
+  color: #fff;
 }
 
 /* Other Components */
