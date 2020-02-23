@@ -560,6 +560,7 @@ nav .links a.active:after {
     overflow: hidden;
     padding: 3em 2em;
     width: calc(256px * 6);
+    padding-right: 50%;
 }
 
 .screenshot-list img {
