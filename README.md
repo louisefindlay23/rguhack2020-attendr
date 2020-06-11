@@ -1,5 +1,7 @@
 # Attendr Interactive Mobile Demo
 
+![](https://attendr.app/assets/img/attendr-logo.png)
+
 Attendr (an attendence app for university students) put forth a design and development challenge for the RGUHack2020 hackathon. They wanted an interactive web element to include on their website.
 
 Their existing website contained a slider of screenshots of the mobile app so I decided the interactivity could be improved by creating a mobile web app where users could interact with the app to act as a demo.
