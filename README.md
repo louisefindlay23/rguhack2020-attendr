@@ -32,4 +32,4 @@ David Graham (Front-End) = [@rigbone1](https://github.com/rigbone1)
 
 ## Useful Links 🔗
 
-[Website](https://louisefindlay.com/rguhack2020-attendr)
+[Website](https://projects.louisefindlay.com/rguhack2020-attendr)
